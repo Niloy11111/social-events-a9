@@ -6,16 +6,26 @@ const NavBar = () => {
         <div className="flex justify-between mb-14">
             
             <div>
-              <h2 className="text-3xl font-Montserrat font-bold"> <span className="text-[#F85559]">E</span>vents</h2>
+              <h2 className="text-3xl font-Inter font-bold"> <span className="text-[#F85559]">E</span>vents</h2>
             </div>
 
             
            <div>
-            <ul className="flex gap-8 text-lg font-Montserrat font-normal">
-            <NavLink><li>Home</li></NavLink>
-            <NavLink><li>Details</li></NavLink>
-            <NavLink><li>Register</li></NavLink>
-            <NavLink><li>Login</li></NavLink>
+            <ul className="flex gap-8 text-lg font-Inter font-normal">
+
+            <NavLink to='/' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+  }><li>Home</li></NavLink>
+
+            <NavLink ><li>Details</li></NavLink>
+
+            <NavLink to='/register' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+  }><li>Register</li></NavLink>
+
+            <NavLink to='login' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+  }><li>Login</li></NavLink>
             </ul>
            </div>
             
