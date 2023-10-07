@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="flex justify-between mb-14">
             
             <div>
-              <h2 className="text-3xl font-Inter font-bold"> <span className="text-[#F85559]">E</span>vents</h2>
+              <h2 className="text-3xl font-Inter font-bold"> <span className="text-[#F85559]">E</span>ventive</h2>
             </div>
 
             

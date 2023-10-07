@@ -11,8 +11,12 @@ const Banner = () => {
             }
         }>
 
-            <h2 className="text-center text-[#FFF] text-5xl font-Inter font-bold">Unleash Your Imagination <br /> Let Us Create the Magic</h2>
+           <div>
+           <h2 className="text-center text-[#FFF] text-5xl font-Inter font-semibold">We'll Make Your Next Celebration <br /> Very Special !  </h2>
+            <p className="text-center mt-6 text-[#FFF]">Ready to make your event vision a reality</p>
+            <button className="px-9 text-[#FFF] py-4 text-base font-Inter mt-6 rounded bg-[#21AA81]">LET'S TALK</button>
           
+           </div>
         </div>
     );
 };
