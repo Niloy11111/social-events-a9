@@ -1,28 +1,41 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 const Login = () => {
 
   const { signInUser, user ,  googleSignIn, logOut} = useContext(AuthContext) ;
 
+
+  console.log(user)
   const handleSignInUser = e => {
+
     e.preventDefault() ;
     const form = new FormData(e.currentTarget)  
     const email = form.get('email')
     const password = form.get('password')
-   
+
 
     signInUser(email, password)
-    .then(res => console.log(res.user))
-    .catch(error => console.log(error))
+    .then(res => {
+      console.log(res.user)  
+      swal("Good job!", "You clicked the button!", "success") 
+    })
+    .catch(error => {
+      console.log(error)
+      swal("Sorry !", "Password or email does not match!", "error")
+    })
   }
 
   const handleGoogleLogin = () => {
     googleSignIn()
-    .then(res => console.log(res.user))
+    .then(res => { 
+      console.log(res.user)
+      swal("Good job!", "You clicked the button!", "success")
+    })
     .catch(error => console.log(error))
 
   }
@@ -30,9 +43,7 @@ const Login = () => {
   const handleLogOut = () => {
     logOut()
   }
-
-
-
+  
     return (
 
         <>

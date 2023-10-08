@@ -3,8 +3,8 @@
 const Gallary = () => {
     return (
         <div className="mt-16">
-            <h2 className="text-[#21315B] font-Inter text-5xl font-semibold">Event photos Gallary</h2>
-            <p className="mt-6 text-base font-Inter text-[#1C1B1B99] font-normal">Every picture tells a story. A brand story, that is. Check out these photos from events that we count as big successes.</p>
+            <h2 className="text-[#21315B] text-center font-Inter text-5xl font-semibold">Here is a gallery of pictures from recent <br /> events.</h2>
+            <p className="text-center mt-6 text-base font-Inter text-[#1C1B1B99] font-normal">Every picture tells a story. A brand story, that is. Check out these photos from events that we count as big successes.</p>
 
             <div className="mt-12 grid grid-cols-3">
               <img className="h-full rounded-tl-lg" src="https://samanthaongphoto.com/wp-content/uploads/2023/09/Markham-Wedding-Chapel-Photography.jpg"></img>

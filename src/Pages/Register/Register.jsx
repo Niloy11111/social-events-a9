@@ -1,27 +1,38 @@
 import { NavLink } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillEye } from 'react-icons/ai';
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const Register = () => {
+  const [error, setError] = useState('')
 
   const {googleSignIn,  createUser } = useContext(AuthContext)
 
   const handleLogin = e => {
+  
       e.preventDefault() ;
       const form = new FormData(e.currentTarget)
-      const name = form.get('name')
+
       const email = form.get('email')
       const password = form.get('password')
       const confirmPassword = form.get('confirmPassword')
 
+    console.log(password, confirmPassword)
       
-      
+    setError('')
+
+      if (! /^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password) ) {
+      setError('Password Should be minimum 6 characters and should have one Capital and Special letter')
+      console.log(error)
+      }
+    else{
       createUser(email, password)
       .then(res => console.log(res.user))
       .catch(error => console.log(error))
+    }    
+      
   }
 
   const handleGoogleLogin = () => {
@@ -34,6 +45,7 @@ const Register = () => {
     return (
          
         <div className=" rounded bg-[white] flex justify-center items-center h-[84vh]">
+           
          
         <div className="border p-6">
 
@@ -56,8 +68,9 @@ const Register = () => {
                <div className="mb-3">
                 <p>I agree to the <span className="text-blue-500">Terms and Conditions</span></p>
                </div>
-
-
+               {
+                error && <p className="text-red-700">{error}</p>
+               }
 
                 <button className="rounded-lg py-4 mx-auto w-full bg-[#191A48]  mb-4 text-[#FFF] font-Inter font-semibold">
                    Register

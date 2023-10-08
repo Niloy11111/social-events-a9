@@ -13,19 +13,28 @@ const NavBar = () => {
            <div>
             <ul className="flex gap-8 text-lg font-Inter font-normal">
 
-            <NavLink to='/' className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+            <NavLink to="/" className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
   }><li>Home</li></NavLink>
 
-            <NavLink ><li>Details</li></NavLink>
 
             <NavLink to='/register' className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+    isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
   }><li>Register</li></NavLink>
 
-            <NavLink to='login' className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-green-400 underline" : ""
+            <NavLink to='/login' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
   }><li>Login</li></NavLink>
+
+            <NavLink to='/contact' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
+  }><li>Contact Us</li></NavLink>
+
+<NavLink to='/details' className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
+  }><li>details</li></NavLink>
+
+
             </ul>
            </div>
             

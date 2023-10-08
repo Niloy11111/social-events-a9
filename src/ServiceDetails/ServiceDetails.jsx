@@ -5,12 +5,9 @@ const ServiceDetails = () => {
 
     const AllservicesDetails = useLoaderData()
 
-    console.log(AllservicesDetails)
-
     const params = useParams()
 
     const idParse = parseFloat(params.id)
-
 
     const clickedService = AllservicesDetails.find(each => parseFloat(each.id) === idParse)
 

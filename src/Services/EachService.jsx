@@ -1,5 +1,5 @@
 import { BsArrowRight } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const EachService = ({service}) => {
 
@@ -16,11 +16,8 @@ const EachService = ({service}) => {
             <p className="ml-4 mt-2 font-Inter font-semibold text-base text-[#0052FF]">{price}</p>
 
            <div className="flex mx-4 justify-between items-center">
-         <NavLink to={`/details/${idParse}`}>  <button  className="flex gap-2 items-center px-7 rounded-lg py-3 font-Inter text-[#FFF] font-semibold text-xl mt-2 bg-[#FF444A]">Details  <BsArrowRight></BsArrowRight></button></NavLink>
+         <Link to={`/serviceDetails/${idParse}`}>  <button  className="flex gap-2 items-center px-7 rounded-lg py-3 font-Inter text-[#FFF] font-semibold text-xl mt-2 bg-[#FF444A]">Details  <BsArrowRight></BsArrowRight></button></Link>
 
-          
-
-           <p className="text-blue-500 font-Inter text-base font-semibold">Get 20% Off</p>
            </div>
         </div>
     );
