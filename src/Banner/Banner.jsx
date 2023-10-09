@@ -16,7 +16,7 @@ const Banner = () => {
 
            <div>
            <h2 className="text-center text-[#FFF] text-3xl lg:text-5xl font-Inter font-semibold">We'll Make Your Next Celebration <br /> Very Special !  </h2>
-            <p className="text-center mt-4 lg:mt-6 text-[#FFF]">Ready to make your event vision a reality</p>
+            <p className="text-center mt-4 lg:mt-6 font-inter text-[#FFF]">Ready to make your event vision a reality</p>
             <div className="flex justify-center">
             <NavLink to="/login"><button className="px-6 lg:px-9 text-[#FFF] py-3 lg:py-4 text-base font-Inter mt-6 rounded bg-[#21AA81]">LET'S TALK</button> </NavLink>
             </div>

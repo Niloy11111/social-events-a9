@@ -29,13 +29,15 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center">
-            <ul className="flex gap-6">
+            <ul className="flex gap-5">
             <a href="">  <li>Our customers</li></a>
            <a href="">   <li>About Us</li></a>
               <a href=""><li> Awards </li></a>
               <a href=""><li> Blog </li></a>
-            <a href="">  <li>Products</li></a>
+              <a href=""> <li>Products</li></a>
             </ul>
+             
+
           </div>
 
           <p className="font-medium text-base text-center">
