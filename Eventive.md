@@ -24,6 +24,3 @@
 ### Feature - 5
 
 - ### After Logged In perfectly In the Header part user can see him/her profile, name, and a logout button where if user wants he/she can logOut from our website and can again login.
-
-
-### Project Live Link
