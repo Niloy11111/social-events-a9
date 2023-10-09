@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Book from "../PrivateRoute/Contact";
+import Articles from "../PrivateRoute/Articles";
 
 
 
@@ -41,7 +42,7 @@ export const router = createBrowserRouter([
             },
             {
                 path : "/details",
-                element : <h2>details are here</h2>
+                element : <PrivateRoute><Articles></Articles> </PrivateRoute>
             }
            
          
