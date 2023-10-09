@@ -1,6 +1,8 @@
-let greeting;
-greetign = {};
-console.log(greetign);
+## Question- 2 
+
+### let greeting;
+### greetign = {};
+### console.log(greetign);
 
 ### Answer -- {}
 
@@ -8,7 +10,7 @@ console.log(greetign);
 ### So when I will try to console using console.log(greeting) , it will print an empty object {} . This is because here greeting is assigned with and empty object {} .
 
 
-## Question- 2 
+
 ### function sum(a, b) {
 ###  return a + b;
 ###   }
