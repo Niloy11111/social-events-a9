@@ -2,8 +2,8 @@
 
 const Articles = () => {
     return (
-        <div className="mx-80">
-            <h2 className="text-4xl mb-8">How to Organise Social Events</h2>
+        <div className="lg:mx-80">
+            <h2 className="text-4xl font-Inter font-semibold mb-8">How to Organise Social Events</h2>
 
             <img src="https://upsu.kayako.com/base/media/url/eNPVBuf4GdpLMxXw1yW0Bk4MfbFOqx13"></img>
 

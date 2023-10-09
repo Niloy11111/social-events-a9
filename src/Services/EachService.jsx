@@ -15,8 +15,8 @@ const EachService = ({service}) => {
 
             <p className="ml-4 mt-2 font-Inter font-semibold text-base text-[#0052FF]">{price}</p>
 
-           <div className="flex mx-4 justify-between items-center">
-         <Link to={`/serviceDetails/${idParse}`}>  <button  className="flex gap-2 items-center px-7 rounded-lg py-3 font-Inter text-[#FFF] font-semibold text-xl mt-2 bg-[#FF444A]">Details  <BsArrowRight></BsArrowRight></button></Link>
+           <div className="flex mx-4 justify-center lg:justify-between items-center">
+         <Link to={`/serviceDetails/${idParse}`}>  <button  className="flex gap-2 items-center px-5 lg:px-7 rounded-lg py-3 font-Inter text-[#FFF] font-semibold text-lg lg:text-xl mt-2 bg-[#FF444A]">Details  <BsArrowRight></BsArrowRight></button></Link>
 
            </div>
         </div>

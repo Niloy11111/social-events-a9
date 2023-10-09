@@ -34,7 +34,7 @@ const Login = () => {
     googleSignIn()
     .then(res => { 
       console.log(res.user)
-      swal("Good job!", "You clicked the button!", "success")
+      swal("Login Successful!", "Welcome back!", "success")
     })
     .catch(error => console.log(error))
 
@@ -51,22 +51,24 @@ const Login = () => {
         {
           user && <div className="flex justify-center">
 
-           <div className="bg-[] border px-14 py-8">
+           <div className=" border px-14 py-8">
           
             <img className="mx-auto rounded-full" src={user.photoURL}></img>
             <h2 className="mt-4 mb-3 text[#191A48] text-xl font-Inter font-semibold "> {user.displayName} </h2>
-            <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-6 font-Inter py-3 rounded-lg bg-gradient-to-r from-[#F00] to-[#FF8938]">LogOut</button>
+            <div className="flex justify-center">
+            <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded-lg bg-gradient-to-r from-[#F00] to-[#FF8938]">LogOut</button>
+            </div>
            </div>
 
           </div>
         }
         
-        <div className=" rounded bg-[white] flex justify-center items-center h-[84vh]">
+        <div className=" rounded bg-[white] flex justify-center items-center h-[83vh]">
          
-         <div className="border p-6">
+         <div className="border -mt-20 lg:p-6">
  
             <div>
-            <form onSubmit={handleSignInUser} className="pl-14 pr-14 rounded w-[570px]">
+            <form onSubmit={handleSignInUser} className="px-8 lg:px-14 rounded lg:w-[570px]">
                  <h2 className="mb-14 text-[#191A48] pt-9 font-Inter text-4xl font-bold text-center">Login Here</h2>
  
                  <div>

@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <div className="mx-32 flex justify-between">
+        <div className="lg:mx-32 gap-8 flex flex-col lg:flex-row justify-between">
             <div className="max-w-[400px]">
                 <h2 className="text-3xl text-[#21315B] font-Inter">
                     WRITE TO US
@@ -11,13 +11,13 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4">
-                <h3 className="text-2xl text-[#21315B]">Hareness Road, Altens Industrial <br /> Estate
-                    Altens, Aberdeen - AB12 3LE</h3>
+                <h3 className="text-2xl text-[#21315B]">Mohammadpur Road, Altens Industrial <br /> Estate
+                     - AB12 </h3>
                 <h3 className="text-2xl text-[#21315B]">01224 248313 </h3>
                 <h3 className="text-2xl text-[#21315B]">info@take5eventive.co.bd</h3>
             </div>
 
-            <div>
+            <div className="mb-10">
                 <input className="border-[#C7C7C7] pl-5 bg-[#FAFAFB] rounded-lg py-3 outline-none w-full block border hover:border-2 hover:border-[#21AA81] pb-3 mb-8 " type="text" placeholder="Your Name" name="name" />
 
                 <input className="border-[#C7C7C7] bg-[#FAFAFB] hover:border-2 hover:border-[#21AA81] rounded-lg py-3 outline-none w-full border b block pl-5 pb-3 mb-8" type="emial" placeholder="Email" name="email" required />

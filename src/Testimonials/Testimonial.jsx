@@ -3,9 +3,9 @@
 const Testimonial = () => {
     return (
         <div className="">
-            <h2 className="my-20 text-center text-[#21315B] font-Inter text-5xl font-semibold">Testimonials</h2>
+            <h2 className="my-12 lg:my-20 text-center text-[#21315B] font-Inter text-4xl lg:text-5xl font-semibold">Testimonials</h2>
 
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
                 <div className="border p-6">
                     <img className="w-[100px] mx-auto h-[100px] rounded-full" src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=740&t=st=1696710359~exp=1696710959~hmac=348aa1bc0c2ebeea0a7bcf8ee29dd1d80e6f90be7a19a6132a350c695940eda0"></img>

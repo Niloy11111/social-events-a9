@@ -16,16 +16,15 @@ const ServiceDetails = () => {
     return (
         <div>
 
-            <div className="">
-                <img className="w-[80%] rounded-lg mx-auto" src={image}></img>
+            <div className="mb-16">
+                <img className=" lg:w-[80%] rounded-lg mx-auto" src={image}></img>
 
-                <p className="text-[#1C1B1B] mt-6 font-Inter font-semibold text-lg">
-                    {service_description}
-                </p>
+                <p className='text-[#0B0B0BB2] font-Inter mt-10 mb-8 lg:mb-10'>{service_description}</p>
 
-                <h2 className="text-5xl font-Inter font-semibold py-14 text-center"><span className="text-[#E76F51]">Frequently </span>Asked Questions</h2>
 
-          <div className="flex items-center">
+                <h2 className="text-3xl lg:text-5xl font-Inter font-semibold py-14 text-center"><span className="text-[#E76F51]">Frequently </span>Asked Questions</h2>
+
+          <div className="flex flex-col gap-4 lg:flex-row items-center">
           <div className="flex-1">
                     <img className="" src="https://img.freepik.com/free-vector/faqs-concept-illustration_114360-6685.jpg"></img>
                 </div>

@@ -9,7 +9,7 @@ const ErrorPage = () => {
             <NavLink to="/">
                 
               <div className='flex justify-center'>
-              <button className='text-lg text-[#FFF] font-semibold px-7 py-3 bg-[#009444] rounded-lg'>
+              <button className='text-lg text-[#FFF] font-semibold px-7 py-3 bg-[#21AA81] rounded-lg'>
                Go Home
                </button>
               </div>

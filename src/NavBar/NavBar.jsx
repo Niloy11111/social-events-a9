@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
 
-        <div className="flex justify-between mb-14">
+        <div className="flex items-center flex-col lg:flex-row  justify-between mb-14">
             
-            <div>
-              <h2 className="text-3xl font-Inter font-bold"> <span className="text-[#F85559]">E</span>ventive</h2>
+            <div className="">
+              <h2 className="mb-4 text-3xl text-center font-Inter font-bold"> <span className="text-[#F85559]">E</span>ventive</h2>
             </div>
 
             
-           <div>
-            <ul className="flex gap-8 text-lg font-Inter font-normal">
+           <div className="flex justify-center">
+            <ul className="flex flex-col lg:flex-row gap-1 lg:gap-8 text-lg font-Inter font-normal">
 
             <NavLink to="/" className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "text-[#21AA81] underline" : ""
