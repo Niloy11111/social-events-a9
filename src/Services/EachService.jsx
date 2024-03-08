@@ -9,7 +9,7 @@ const EachService = ({service}) => {
 
     return (
         <div className="border rounded-t-lg pb-6">
-            <img className="p-2 rounded-t-lg w-full h-[320px]" src={image}></img>
+                                    <img className="p-2 rounded-t-lg w-full h-[320px]" src={image}></img>
             <h2 className="ml-4 text-xl font-Inter font-semibold mt-4 text-[#0052FF]"> {name} </h2>
             <p className='ml-4 mt-3 text-sm font-normal font-Inter text-[#1C1B1B99]'>{short_description}</p>
 

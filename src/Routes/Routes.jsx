@@ -19,12 +19,12 @@ export const router = createBrowserRouter([
         children : [
             {
                 path : '/',
-                loader: () => fetch('data.json'),
+                loader: () => fetch('/data.json'),
                 element : <HomePage></HomePage>
             },
             {
                 path :'/serviceDetails/:id',
-                loader: () => fetch('data.json'),
+                loader: () => fetch('/data.json'),
                 element : <PrivateRoute> <ServiceDetails></ServiceDetails></PrivateRoute>,
             },
             {
